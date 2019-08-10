@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r1K-MS-SHt">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PostalCodeViewController" customModule="WtestExec1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a80-0p-WJD">
+                                <rect key="frame" x="0.0" y="129" width="414" height="684"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostalCodeCell" id="WPE-7s-bJ9" customClass="PostalCodeTableViewCell" customModule="WtestExec1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WPE-7s-bJ9" id="3Dt-dM-Ffk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJc-TE-eQt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-0D-knf">
+                                        <rect key="frame" x="38" y="68" width="338" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="P5S-0D-knf" secondAttribute="trailing" constant="38" id="9Fy-z4-2MP"/>
+                                    <constraint firstAttribute="bottom" secondItem="P5S-0D-knf" secondAttribute="bottom" constant="31" id="nXE-4H-EUP"/>
+                                    <constraint firstItem="P5S-0D-knf" firstAttribute="leading" secondItem="sJc-TE-eQt" secondAttribute="leading" constant="38" id="pey-gk-lGf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sJc-TE-eQt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="76J-Yt-oI4"/>
+                            <constraint firstItem="a80-0p-WJD" firstAttribute="top" secondItem="sJc-TE-eQt" secondAttribute="bottom" id="7Yc-Cu-IRM"/>
+                            <constraint firstItem="sJc-TE-eQt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JPH-5F-oFp"/>
+                            <constraint firstItem="a80-0p-WJD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lfn-fg-wFm"/>
+                            <constraint firstItem="a80-0p-WJD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a61-zy-qSq"/>
+                            <constraint firstItem="a80-0p-WJD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kLG-qS-7f8"/>
+                            <constraint firstItem="a80-0p-WJD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="xvo-UT-ads"/>
+                            <constraint firstItem="sJc-TE-eQt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zwC-cY-Jhq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kXo-Wk-fLS"/>
+                    <connections>
+                        <outlet property="postalCodeTableview" destination="a80-0p-WJD" id="gbF-ct-l0V"/>
+                        <outlet property="searchTextField" destination="P5S-0D-knf" id="Aax-m1-ZhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bQW-yw-nv1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r1K-MS-SHt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gz1-fd-77j">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="67w-Rh-nWa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAP-KY-kX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
