@@ -36,9 +36,11 @@ class DBManager {
     
     func filterDB(withSearch search: String) -> Results<PostalCode> {
         let realm = try! Realm()
-        let filtered = realm.objects(PostalCode.self).filter("postalCodeLocation CONTAINS[cd] %@ OR postalCode CONTAINS %@ OR postalCodeExtension CONTAINS %@", search, search, search)
+        let filteredItems = realm.objects(PostalCode.self).filter("postalCodeLocation CONTAINS[cd] %@ OR postalCode CONTAINS %@ OR postalCodeExtension CONTAINS %@", search, search, search)
         
-        return filtered
+        
+        
+        return filteredItems
     }
     
     func parseDataToRealm(withData data: Data) {
